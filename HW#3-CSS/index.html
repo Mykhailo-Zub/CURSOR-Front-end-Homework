@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>HW#3 CSS</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- the first table starts here -->
+        <table class="first-table" cols="3">
+            <tr class="first-line">
+                <td class="col1 with-triangle">Name</td>
+                <td>Date</td>
+                <td class="col3"></td>  
+            </tr>
+            <tr>
+                <td class="file-col">File.pdf</td>
+                <td class="date-col">3 mins ago</td>
+                <td class="gray-dots">&bull;&bull;&bull;</td> 
+            </tr>
+            <tr>
+                <td class="file-col">File.pdf</td>
+                <td class="date-col">Yestarday</td>
+                <td class="gray-dots">&bull;&bull;&bull;</td>  
+            </tr>
+            <tr>
+                <td class="last-line file-col">File.pdf</td>
+                <td class="last-line date-col">June 1st, 2019</td>
+                <td class="last-line gray-dots">&bull;&bull;&bull;</td>  
+            </tr> 
+        </table>
+
+        <!-- the second table starts here -->
+        <table class="second-table" cols="4">
+            <tr class="first-line">
+                <td class="img-col"><img class="chkbx-img" src="./ico/unknown.png" alt="checkbox unknown"></td>
+                <td class="col2 with-triangle">Name</td>
+                <td>Date</td>
+                <td class="col3"></td>  
+            </tr>
+            <tr>
+                <td class="img-col"><input id="chkbx1" type="checkbox"></td>
+                <td class="file-col"><label for="chkbx1">File.pdf</label></td>
+                <td class="date-col">3 mins ago</td>
+                <td class="white-dots">&bull;&bull;&bull;</td> 
+            </tr>
+            <tr>
+                <td class="img-col"><input checked id="chkbx2" type="checkbox"></td>
+                <td class="file-col"><label for="chkbx2">File.pdf</label></td>
+                <td class="date-col">Yestarday</td>
+                <td class="white-dots">&bull;&bull;&bull;</td>  
+            </tr>
+            <tr>
+                <td class="last-line img-col"><input id="chkbx3" type="checkbox"></td>
+                <td class="last-line file-col"><label for="chkbx3">File.pdf</label></td>
+                <td class="last-line date-col">June 1st, 2019</td>
+                <td class="last-line white-dots">&bull;&bull;&bull;</td>  
+            </tr> 
+        </table>
+        
+        <!-- the third table starts here -->
+        <table class="second-table" cols="4">
+            <tr class="first-line">
+                <td colspan="2" class="col1-3rd-table with-triangle">Name</td>
+                <td>Date</td>
+                <td class="search-col"><input class="search" type="search" placeholder=" &#128269;  Search"></td>  
+            </tr>
+            <tr>
+                <td class="img-col"><img class="box-img" src="./ico/box.png" alt="cartoon box"></td>
+                <td class="file-col2"> File.pdf</td>
+                <td class="date-col">3 mins ago</td>
+                <td class="white-dots">&bull;&bull;&bull;</td> 
+            </tr>
+            <tr>
+                <td class="img-col"><img class="box-img" src="./ico/box.png" alt="cartoon box"></td>
+                <td class="file-col2"> File.pdf</td>
+                <td class="date-col">Yestarday</td>
+                <td class="white-dots">&bull;&bull;&bull;</td>  
+            </tr>
+            <tr>
+                <td class="last-line img-col"><img class="box-img" src="./ico/box.png" alt="cartoon box"></td>
+                <td class="last-line file-col2"> File.pdf</td>
+                <td class="last-line date-col">June 1st, 2019</td>
+                <td class="last-line white-dots">&bull;&bull;&bull;</td>  
+            </tr> 
+        </table>
+    </div>
+</body>
+</html>

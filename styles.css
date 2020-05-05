@@ -1,0 +1,66 @@
+body {
+    box-sizing: border-box;
+    background-color: #E0FFFF;
+    font-family: 'Staatliches', cursive;
+}
+
+.wrapper {
+    background-color: #B0C4DE;
+    width: 1500px;
+    margin: 30px auto;
+    padding: 50px;
+    box-shadow: 31px 20px 59px 12px rgba(0,0,0,0.82);
+}
+
+h1 {
+    font-family: 'Shadows Into Light', cursive;
+    color: #8B0000;
+    text-align: center;
+    font-size: 40px;
+}
+
+.progress-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.progress-header {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.progressbar {
+    width: 500px;
+    height: 30px;
+    border-radius: 8px;
+    background: linear-gradient(to right, rgba(212,228,239,1) 0%,
+     rgba(134,174,204,1) 26%,
+     rgba(39,143,217,1) 59%,
+     rgba(199,213,222,1) 91%,
+     rgba(199,213,222,1) 100%);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     padding: 0 5px;
+}
+
+.progress {
+    width: 17%;
+    height: 70%;
+    background-color: rgb(118, 4, 153);
+    border-radius: 4px;
+    text-align: center;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: #228B22;
+}
+
+.undone {
+    color: #FF4500;
+}

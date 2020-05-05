@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>HW#2 HTML</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>HW #2 HTML</h1>
+        <h3 class="table-header">Great people</h3>
+        <table>
+            <tr>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Phone</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Jack</td>
+                <td>Daniel</td>
+                <td><a href="tel:+380671112233">+380 (67) 111 22 33</a></td>
+                <td><a href="mailto:jack.daniel@gmail.com">jack.daniel@gmail.com</a></td>
+            </tr>
+            <tr>
+                <td>Johnnie</td>
+                <td>Walker</td>
+                <td><a href="tel:+380674445566">+380 (67) 444 55 66</a></td>
+                <td><a href="mailto:johnnie.walker@gmail.com">johnnie.walker@gmail.com</a></td>
+            </tr>
+            <tr>
+                <td>William</td>
+                <td>Grant</td>
+                <td><a href="tel:+380677778899">+380 (67) 777 88 99</a></td>
+                <td><a href="mailto:william.grant@gmail.com">william.grant@gmail.com</a></td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Jameson</td>
+                <td><a href="tel:+380675555555">+380 (67) 555 55 55</a></td>
+                <td><a href="mailto:john.jameson@gmail.com">john.jameson@gmail.com</a></td>
+            </tr>
+        </table>
+        <h3 class="reg-header">Registration in the list of great people</h3>
+        <form action="">
+            <p>First name: <input type="text" placeholder="First name"></p>
+            <p>Last name: <input type="text" placeholder="Last name"></p>
+            <p>Phone: <input type="number" placeholder="Phone"></p>
+            <p>Email: <input type="email" placeholder="Email"></p>
+            <p class="some-margin">Sex: </p>
+                <label>M <input name="male" checked type="radio" value="m"></label>
+                <label>F <input name="male" type="radio" value="f"></label>
+            <p class="some-margin">Tell us about yourself: </p>
+                <textarea name="about-yourself" cols="80" rows="10"></textarea>
+            <p class="some-margin">Where you were born? </p>
+                <select name="city">
+                    <option value="cd" selected disabled>Choose a city</option>
+                    <option value="c1">Kyiv</option>
+                    <option value="c2">Lviv</option>
+                    <option value="c3">Kharkiv</option>
+                    <option value="c4">Dnipro</option>
+                    <option value="c5">Odessa</option>
+                </select>
+            <p class="lang-select">Language: </p>
+            <label><input type="checkbox">English</label>
+            <label><input type="checkbox">Українська</label>
+            <label><input type="checkbox">Русский</label>        
+            <button class="submit-button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
