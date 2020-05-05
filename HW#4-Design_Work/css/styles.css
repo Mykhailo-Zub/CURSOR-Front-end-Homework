@@ -1,0 +1,135 @@
+body {
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 1440px;
+    height: 782px;
+    background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%,
+     rgba(238, 61, 27, 0.8) 100%);
+}
+
+.background {
+    width: 1440px;
+    height: 782px;
+    left: 0px;
+    top: 0px;
+    background-image: url(../img/BG.png);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 60px 0 0 166px;
+}
+
+.cloud {
+    width: 25px;
+    height: 17px;
+}
+
+.site-name {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 10px;
+}
+
+.nav-bar {
+    margin-left: 161px;
+}
+
+.nav-button {
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: bold;
+    height: 22px;
+    color: #ffffff;
+    border: none;
+    text-transform: uppercase;
+}
+
+.lang-select {
+    margin-left: 114px;
+    display: flex;
+}
+
+.usa-flag {
+    width: 30px;
+    height: 30px;
+}
+
+.lang-name {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-top: 5px;
+    position: relative;
+}
+
+.lang-name::after {
+    content: '';
+    border: 7px solid transparent;
+    border-top: 7px solid #ffffff;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+
+.login-button {
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    width: 100px;
+    height: 40px;
+    margin-left: 85px;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+    position: relative;
+    bottom: 8px;
+}
+
+main {
+    margin-top: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-name {
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 86px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.description {
+    width: 540px;
+    height: 124px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.sign-in-button {
+    width: 160px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 39px;
+    text-transform: uppercase;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
