@@ -127,6 +127,9 @@ main {
     margin: 0 auto;
     margin-top: 39px;
     text-transform: uppercase;
+    color: #ED4C5C;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 p {
