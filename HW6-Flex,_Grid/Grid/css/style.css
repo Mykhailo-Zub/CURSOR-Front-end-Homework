@@ -217,7 +217,7 @@ h2 {
     background: #9C69E2;
     border-radius: 50px;
     margin-top: 185px;
-    padding: 109px 6.7% 62px 8.5%;
+    padding: 109px 93px 62px 76px;
     display: grid;
     grid-template-rows: min-content 1fr min-content;
 }
@@ -236,6 +236,7 @@ h2 {
     display: grid;
     grid-template-columns: 280px 1fr;
     grid-template-rows: min-content min-content 1fr;
+    width: 100%;
 }
 
 .review-container img {
@@ -426,5 +427,24 @@ footer {
 @media (max-width: 1370px) {
     body {
         padding: 50px 20px 90px;
-        }
+    }
+
+    .section1 img {
+        width: 40%;
+        left: 50%;
+    }
+
+    .review-container {
+        width: 90%;
+    }
+
+    .section7 {
+        grid-template-columns: 300px 10px 165px 10px 165px 10px 180px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .review-container {
+        width: 80%;
+    }
 }
