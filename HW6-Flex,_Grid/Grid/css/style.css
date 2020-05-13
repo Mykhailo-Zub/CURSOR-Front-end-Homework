@@ -274,7 +274,7 @@ h2 {
 .scroll {
     margin-top: 60px;
     display: grid;
-    grid-auto-flow: column;
+    grid-template-columns: min-content 1fr min-content;
 }
 
 .dots {
@@ -299,7 +299,7 @@ h2 {
 }
 
 .left-arr {
-    margin-left: 814px;
+    margin-left: auto;
     margin-right: 20px;
 }
 
