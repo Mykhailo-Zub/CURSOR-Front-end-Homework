@@ -199,7 +199,7 @@ section, footer {
         margin-right: 0;
     }
 
-    button img:hover {
+    .buttons1 img:hover {
         width: 146px;
     }
 
@@ -478,6 +478,16 @@ section, footer {
     color: inherit;
 }
 
+.section4 p::before {
+    content: "";
+    margin-right: 7px;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+
 @media (max-width:1280px) {
     .section4 tr {
         display: block;
@@ -504,6 +514,10 @@ section, footer {
 
     .section4 p {
         color: #4F4F4F;
+    }
+
+    .section4 p::before {
+        display: none;
     }
 
     .section4_mobile {
@@ -760,6 +774,10 @@ section, footer {
 
     .section7 h2, .section7 p {
         text-align: center;
+    }
+
+    .section7 h2 {
+        margin-top: 20px;
     }
 }   
 
