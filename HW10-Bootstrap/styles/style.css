@@ -1,0 +1,144 @@
+body {
+    font-family: "Helvetica Neue";
+    color: #262626;
+}
+
+#search::placeholder {
+    background: url("../img/search.png");
+    background-repeat: no-repeat;
+    background-position: 28% 55%;
+    text-align: center;
+}
+
+#search {
+    width: 216px;
+    height: 29px;
+}
+
+.header {
+    min-height: 50px;
+}
+hr {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.paper_plan{
+    position: relative;
+}
+
+.paper_plan::after{
+    content: "7";
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: #DC565B;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+    position: absolute;
+    bottom: 8px;
+    left: 14px;
+}
+
+.name {
+    font-size: 26px;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.follow-btn {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: "Helvetica Neue";
+    width: 97px;
+    height: 29px;
+    background: #4094EF;
+    border-radius: 3px;
+    padding: 5px 26px;
+    border: none;
+}
+
+.dropdown-btn {
+    width: 33px;
+    height: 29px;
+    background: #4094EF;
+    border-radius: 3px;
+    align-items: center;
+    display: flex;
+}
+
+.stat-row {
+    margin-top: 24px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 17px;
+    color: #262626;
+}
+
+.name-row {
+    margin-top: 21px;
+}
+
+p {
+    font-size: 17px;
+    line-height: 25px;
+    color: #262626;
+    margin-bottom: 0;
+    margin-left: -15px;
+}
+
+.right-side {
+    margin-top: 7px;
+}
+
+.small-avatar {
+    width: 79px;
+    height: 79px;
+}
+
+.small-avatar-row {
+    margin-top: 56px;
+    margin-bottom: 87px;
+}
+
+.carousel-img1 {
+    margin-top: 50px;
+}
+
+.my-carousel {
+    margin-top: 15px;
+}
+
+.container hr {
+    margin-bottom: 0;
+}
+
+.portrait_ico {
+    position: absolute;
+    right: 145px;
+    top: 15px;
+    width: 15px;
+    height: 15px;
+}
+
+.tagged_btn {
+    position: absolute;
+    right: 50px;
+}
+
+.grid_ico {
+    position: absolute;
+    right: 145px;
+    top: 15px;
+    width: 15px;
+    height: 15px;
+}
+
+.posts_btn {
+    position: absolute;
+    right: 70px;
+}
