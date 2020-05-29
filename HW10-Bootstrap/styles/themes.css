@@ -31,3 +31,16 @@
     line-height: 25px;
     letter-spacing: 0.09em;
 }
+
+@media (max-width: 767px) {
+    .carousel-control-prev {
+        left: 120px;
+        z-index: 1;
+    }
+
+
+    .carousel-control-next {
+        left: 270px;
+        z-index: 2;
+    }
+}

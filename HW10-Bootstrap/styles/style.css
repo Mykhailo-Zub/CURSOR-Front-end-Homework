@@ -142,3 +142,20 @@ p {
     position: absolute;
     right: 70px;
 }
+
+@media (max-width: 767px) {
+    .header {
+        height: 150px;
+    }
+
+    #search {
+        position: relative;
+        top: 40px;
+        right: 110px;
+    }
+
+    .right-side {
+        margin-top: 160px;
+        margin-left: -40px;
+    }
+}
