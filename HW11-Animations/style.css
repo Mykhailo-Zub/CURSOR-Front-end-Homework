@@ -1,0 +1,308 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9E9E9E;
+}
+
+.star_wars {
+    width: 1200px;
+    height: 600px;
+    position: relative;
+}
+
+button {
+    background: inherit;
+    border: none;
+    position: absolute;
+    left: 400px;
+    top: 270px;
+    outline: none;
+}
+
+.luke, .robe {
+    height: 400px;
+    position: absolute;
+}
+
+.luke {
+    left: 800px;
+    top: 120px;
+}
+
+.robe {
+    top:120px;
+}
+
+.menu {
+    width: 350px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.small_line {
+    width: 50px;
+    height: 10px;
+    background-color: #ffffff;
+}
+
+.big_line, .blue_saber, .red_saber {
+    width: 250px;
+    height: 10px;
+    background-color: #ffffff;
+}
+
+.row1, .row2, .row3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.animate_blue {
+    animation-name: lightsaber1;
+    animation-duration: 3s;
+    transition: all 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+
+}
+
+.animate_red {
+    animation-name: lightsaber2;
+    animation-duration: 3s;
+    transition: all 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+.hide {
+    animation-name: hide;
+    animation-duration: 3s;
+    transition: all 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+img {
+    opacity: 0;
+}
+
+.visible {
+    animation-name: visible;
+    animation-duration: 3s;
+    transition: all 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+
+@keyframes lightsaber1 {
+    0% {
+        background: #ffffff;
+        border-radius: 5px;
+    }
+
+    100% {
+        border-radius: 5px;
+        box-shadow: 0px 0px 50px 42px rgba(16,235,246,0.84);
+        transform: rotate(200deg) translate(-165px, 200px);
+    }
+
+}
+
+@keyframes lightsaber2 {
+    0% {
+        background: #ffffff;
+        border-radius: 5px;
+    }
+
+    100% {
+        border-radius: 5px;
+        box-shadow: 0px 0px 50px 42px rgba(245,17,36,1);
+        transform: rotate(-250deg) translate(-85px, 307px);
+    }
+
+}
+
+@keyframes hide {
+    0% {
+        background: #ffffff;
+    }
+
+    50% {
+        transform: translateY(-400px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes visible {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+hr {
+    height: 4px;
+    background-color: #000000;
+    width: 100%;
+}
+
+.balls_wrapper {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 10px solid black;
+}
+
+.balls {
+    display: flex;
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    background: linear-gradient(to right, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+}
+
+.ball::after {
+    content: "";
+    display: block;
+    height: 160px;
+    width: 5px;
+    background: black;
+    position: absolute;
+    bottom: 50px;
+    left: 25px;
+}
+
+.shadows {
+    margin-top: 50px;
+    display: flex;
+}
+
+.shadow {
+    background-color: #9E9E9E;
+    box-shadow: 0px 0px 20px 20px rgba(0,0,0,0.26);
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.ball1 {
+    transform-origin: 0 -185px;
+    animation-name: left;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes left {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(70deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }    
+    
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.ball7 {
+    transform-origin: 100% -185px;
+    animation-name: right;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes right {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(00deg);
+    }
+
+    75% {
+        transform: rotate(-70deg);
+    }    
+    
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.shadow:first-child {
+    animation-name: sh-left;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sh-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-150px) scale(0.6);
+    }
+
+    50% {
+        transform: translateX(0);
+    }    
+    
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.shadow:last-child {
+    animation-name: sh-right;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sh-right {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    75% {
+        transform: translateX(150px) scale(0.6);
+    }    
+    
+    100% {
+        transform: translateX(0);
+    }
+}

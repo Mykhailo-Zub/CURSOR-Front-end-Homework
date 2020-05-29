@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="ico.jpg" type="image/x-icon">
+    <title>HW#11 Animations</title>
+</head>
+<body>
+    <div class="star_wars">
+        <img class="robe" src="robe.png">
+        <img class="luke" src="luke.png">
+        <button onclick="clickMe()">
+            <div class="menu">
+                <div class="row1">
+                    <div class="small_line other1"></div>
+                    <div class="blue_saber"></div>
+                </div>
+                <div class="row2">
+                    <div class="red_saber"></div>
+                    <div class="small_line other2"></div>
+                </div>
+                <div class="row3 other3">
+                    <div class="small_line"></div>
+                    <div class="big_line"></div>
+                </div>
+            </div>
+        </button>
+    </div>
+    <script>
+        function clickMe() {
+    document.querySelector(".blue_saber").classList.toggle("animate_blue");
+    document.querySelector(".red_saber").classList.toggle("animate_red");
+    document.querySelector(".other1").classList.toggle("hide");
+    document.querySelector(".other2").classList.toggle("hide");
+    document.querySelector(".other3").classList.toggle("hide");
+    document.querySelector(".luke").classList.toggle("visible");
+    document.querySelector(".robe").classList.toggle("visible");
+    }
+    </script>
+    <hr>
+    <div class="balls_wrapper">
+        <div class="balls">
+            <div class="ball ball1"></div>
+            <div class="ball ball2"></div>
+            <div class="ball ball3"></div>
+            <div class="ball ball4"></div>
+            <div class="ball ball5"></div>
+            <div class="ball ball6"></div>
+            <div class="ball ball7"></div>
+        </div>
+        <div class="shadows">
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -80,3 +80,61 @@ a {
 .HW6_flex, .HW6_grid {
     margin-left: 150px;
 }
+
+.l1, .l2, .l3, .l4, .l5, .l6, .l7, .l8, .l9, .l10 {
+    position: relative;
+    animation-name: hw11;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.l9 {
+    animation-delay: .1s;
+}
+
+.l8 {
+    animation-delay: .2s;
+}
+
+.l7 {
+    animation-delay: .3s;
+}
+
+.l6 {
+    animation-delay: .4s;
+}
+
+.l5 {
+    animation-delay: .5s;
+}
+
+.l4 {
+    animation-delay: .6s;
+}
+
+.l3 {
+    animation-delay: .7s;
+}
+
+.l2 {
+    animation-delay: .8s;
+}
+
+.l1 {
+    animation-delay: .9s;
+}
+
+
+
+@keyframes hw11 {
+    0% {
+        left: 0px;
+    }
+    50% {
+        left:50px;
+        color: blue;
+    }
+    100% {
+        left: 0px;
+    }
+}
