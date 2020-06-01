@@ -154,6 +154,13 @@ p {
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
+    margin-left: -40px;
+}
+
+@media (max-width: 1199px) {
+    .controls {
+        margin-left: 0px;
+    }
 }
 
 .posts_btn:hover, .tagged_btn:hover {

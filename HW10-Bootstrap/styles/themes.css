@@ -8,6 +8,7 @@
 
 .carousel-indicators {
     bottom: 1758px;
+    left: calc(50% - 590px);
 }
 
 .carousel-indicators li {
@@ -17,9 +18,53 @@
     margin-right: 30px;
 }
 
+.carousel {
+    margin-left: 30px;
+}
+
+@media (max-width: 1199px) {
+    .carousel-indicators {
+        left: calc(50% - 470px);
+    }
+
+    .carousel {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 991px) {
+    .carousel-indicators {
+        left: calc(50% - 350px);
+    }
+}
+
+@media (max-width: 767px) {
+    .carousel-indicators {
+        left: calc(50% - 265px);
+    }
+}
+
+@media (max-width: 520px) {
+    .carousel-indicators {
+        left: calc(50% - 230px);
+    }
+}
+
 @media (max-width: 384px) {
     .nav-link {
         padding-left: 0.7rem;
         padding-right: 0.7rem;
+    }
+
+    .carousel-indicators {
+        bottom: 1750px;
+        left: calc(50% - 170px);
+    }
+
+    .carousel-indicators li {
+        background-color: #000000;
+        width: 80px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
