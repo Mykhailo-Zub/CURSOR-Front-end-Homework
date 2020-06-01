@@ -67,6 +67,8 @@ hr {
     border-radius: 3px;
     align-items: center;
     display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .stat-row {
