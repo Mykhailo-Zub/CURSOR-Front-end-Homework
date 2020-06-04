@@ -1,0 +1,48 @@
+.nav-link {
+    font-size: 14px;
+    color: #505F98;
+}
+
+.btn-primary {
+    background: #111B47;
+    border-radius: 2px;
+    border-color: #111B47;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.btn-secondary {
+    border: 2px solid #091133;
+    border-radius: 2px;
+    background: transparent;
+    color: #091133;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+@media (max-width:991px) {
+    .col-md-6, .col-md-5 {
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width:575px) {
+    .navbar-toggler {
+        background: #111B47;
+        border-radius: 2px;
+        border-color: #111B47;
+        font-weight: 500;
+        font-size: 16px;
+        color: #ffffff;
+        width: 100px;
+       padding: 10px 20px;
+    }
+
+    .navbar-nav li {
+        margin-right: 0px!important;
+    }
+
+}
