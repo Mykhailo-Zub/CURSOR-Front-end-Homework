@@ -138,3 +138,8 @@ a {
         left: 0px;
     }
 }
+
+.bonus {
+    margin-left: 55px;
+    color: lime;
+}

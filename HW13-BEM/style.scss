@@ -1,0 +1,129 @@
+@import "./btn/btn.scss",
+    "./btn/__btn-download-img/_black/btn__btn-download-img-black.scss",
+    "./btn/__btn-download-img/_blue/btn__btn-download-img-blue.scss",
+    "./btn/__btn-download-img/_gray/btn__btn-download-img-gray.scss",
+    "./btn/__btn-download-img/_white/btn__btn-download-img-white.scss",
+    "./btn/__btn-search-img/_black/btn__btn-search-img-black.scss",
+    "./btn/__btn-search-img/_white/btn__btn-search-img-white.scss",
+    "./btn/__btn-tag-img/_black/btn__btn-tag-img-black.scss",
+    "./btn/__btn-tag-img/_white/btn__btn-tag-img-white.scss",
+    "./btn/_apply-btn/btn_apply-btn.scss", "./btn/_big-btn/btn_big-btn.scss",
+    "./btn/_big-round-btn/btn_big-round-btn.scss",
+    "./btn/_blue-border-btn/btn_blue-border-btn.scss",
+    "./btn/_disable-btn/btn_disable-btn.scss",
+    "./btn/_error-btn/btn_error-btn.scss",
+    "./btn/_primary-btn/btn_primary-btn.scss",
+    "./btn/_secondary-btn/btn_secondary-btn.scss",
+    "./btn/_small-btn/btn_small-btn.scss",
+    "./btn/_small-round-btn/btn_small-round-btn.scss",
+    "./btn/_tag-btn/btn_tag-btn.scss",
+    "./btn/_tag-close-btn/btn_tag-close-btn.scss",
+    "./btn/_tag-disable-btn/btn_tag-disable-btn.scss",
+    "./double-btn/double-btn.scss",
+    "./double-btn/_big-btn/double-btn_big-btn.scss",
+    "./double-btn/_left/double-btn_left.scss",
+    "./double-btn/_primary-btn/double-btn_primary-btn.scss",
+    "./double-btn/_right/double-btn_left.scss",
+    "./double-btn/_secondary-btn/double-btn_secondary-btn.scss",
+    "./double-btn/_small-btn/double-btn_small-btn.scss",
+    "./tripple-btn/tripple-btn.scss",
+    "./tripple-btn/__btn-archive-img/_black/tripple-btn__btn-archive-img-black.scss",
+    "./tripple-btn/__btn-download-img/_black/tripple-btn__btn-download-img-black.scss",
+    "./tripple-btn/__btn-search-img/_black/tripple-btn__btn-search-img-black.scss",
+    "./tripple-btn/__btn-search-img/_white/tripple-btn__btn-search-img-white.scss",
+    "./tripple-btn/_big-btn/tripple-btn_big-btn.scss",
+    "./tripple-btn/_big-img-btn/tripple-btn_big-img-btn.scss",
+    "./tripple-btn/_left/tripple-btn_left.scss",
+    "./tripple-btn/_primary-btn/tripple-btn_primary-btn.scss",
+    "./tripple-btn/_right/tripple-btn_right.scss",
+    "./tripple-btn/_secondary-btn/tripple-btn_secondary-btn.scss",
+    "./tripple-btn/_small-btn/tripple-btn_small-btn.scss",
+    "./tripple-btn/_small-img-btn/tripple-btn_small-img-btn.scss";
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
+
+tr {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.buttons-table {
+    margin-left: 60px;
+    margin-top: 45px;
+}
+
+.col1 {
+    display: flex;
+    justify-content: space-between;
+    width: 645px;
+}
+
+.big_buttons {
+    margin-top: 25px;
+}
+
+.right_btn_img {
+    margin-left: 14px;
+}
+
+.left_btn_img {
+    margin-right: 14px;
+}
+
+.second-section-name {
+    margin-top: 70px;
+}
+
+.small_buttons {
+    margin-top: 20px;
+}
+
+.small_buttons:nth-child(2) {
+    margin-top: 9px;
+}
+
+.first_tag-row {
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.first_tag-close-btn {
+    margin-right: 12px;
+}
+
+.second_tag-row {
+    margin-top: 14px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.first_tag-btn {
+    margin-right: 25px;
+}
+
+.col2 {
+    display: flex;
+    margin-left: 132px;
+}
+
+.first_round-btn {
+    margin-left: 74px;
+    margin-right: 28px;
+}
