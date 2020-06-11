@@ -694,3 +694,22 @@ footer {
     width: 23px; height: 62px;
     background: url("../img/css_sprites.png") -53px -10px;
 }
+
+.video_mob {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .video_desktop {
+        display: none;
+    }
+
+    .video_mob {
+        display: inline;
+    }
+
+    .video_mob img {
+        width: 100%;
+        height: 100%;
+    }
+}
