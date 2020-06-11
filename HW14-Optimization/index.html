@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="./css/combine.css">
+    <!-- <link rel="stylesheet" href="./css/preloader.css">
     <link rel="stylesheet" href="css/screen.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
 </head>
 <body>
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+      </div>
     <header>
         <div class="wrapper">
             <img src="img/logo.png" alt="Logo Avtoparktronik" class="logo">
@@ -105,7 +115,7 @@
             </h2>
             <div class="reason">
                 <div class="square">
-                    <img src="img/reason1.png" alt="" class="width60">
+                    <div class="bg-reason1 width60"></div>
                 </div>
                 <h4 class="h4">Быстрый и легкий монтаж</h4>
                 <div class="reason-text">Зеркало с монитором крепится поверх штатного и не требует дополнительных установок.
@@ -113,7 +123,7 @@
             </div>
             <div class="reason">
                 <div class="square">
-                    <img src="img/reason2.png" alt="">
+                    <div class="bg-reason2"></div>
                 </div>
                 <h4 class="h4">Стоимость</h4>
                 <div class="reason-text">Цена видеопарктроника у дилера от 19990 грн.Наша цена всего 3990 грн.
@@ -121,7 +131,7 @@
             </div>
             <div class="reason">
                 <div class="square">
-                    <img src="img/reason3.png" alt="" class="width35">
+                    <div class="bg-reason3"></div>
                 </div>
                 <h4 class="h4">Экономия</h4>
                 <div class="reason-text">В случае наезда на препятствие при движении задним ходом, стоимость ремонта бампера
@@ -130,7 +140,7 @@
             </div>
             <div class="reason">
                 <div class="square">
-                    <img src="img/reason4.png" alt="">
+                    <div class="bg-reason4"></div>
                 </div>
                 <h4 class="h4">Безопасность для пешеходов</h4>
                 <div class="reason-text">при движении задним ходом (угол обзора нашей камеры 170 градусов)
@@ -141,7 +151,7 @@
     <section class="video">
         <div class="wrapper">
             <h2 class="h2">как работает <span class="yellow">видеопарктроник?</span></h2>
-            <div id="video"></div>
+            <div id="video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/M7lc1UVf-VE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         </div>
     </section>
     <section class="how">
@@ -167,10 +177,10 @@
     <section class="reviews">
         <div class="wrapper">
             <h2 class="h2">отзывы о нашем <span class="yellow">видеопарктронике</span></h2>
-            <img src="img/arrow-left.png" alt="" class="arrow-left">
             <div class="review-slider">
-                <div class="slide">
-                    <img src="img/review1.jpg" alt="" class="main-review-img">
+                <div class="slider">
+                    <div>
+                        <img src="img/review1.jpg" alt="" class="main-review-img">
                     <p class="review-text">
                         Опять долгие ночи в интернете в поисках обзоров и сравнений… Проблема таких устройств что у них либо
                         дизайн
@@ -188,9 +198,17 @@
                     </p>
                     <div class="review-author"><img src="img/review1-ava.jpg" alt="" class="ava"><b>Константин</b><i>г.
                         Днепропетровск</i></div>
+                    </div>
+                    <div>
+                        <img src="img/review2.jpg" alt="" class="main-review-img">
+                    <p class="review-text">
+                        Разводняк, на второй день перестал работать! Не покупайте эту хрень!!!
+                    </p>
+                    <div class="review-author"><img src="img/loh.jpg" alt="" class="ava"><b>Лошара</b><i>г.
+                        Мухосранск</i></div>
+                    </div>
                 </div>
             </div>
-            <img src="img/arrow-right.png" alt="" class="arrow-right">
         </div>
     </section>
     <section class="delivery">
@@ -204,13 +222,13 @@
             </ul>
             <p>Мы заботимся о своей репутации, клиенты для нас на первом месте!</p>
             <div class="advantages">
-                <div class="adv"><img src="img/adv1.png" alt="">
+                <div class="adv"><div class="bg-adv1"></div>
                     <div class="adv-title yellow">Оплата при получении</div>
                 </div>
-                <div class="adv"><img src="img/adv2.png" alt="">
+                <div class="adv"><div class="bg-adv2"></div>
                     <div class="adv-title yellow">365 дней гарантии</div>
                 </div>
-                <div class="adv"><img src="img/adv3.png" alt="">
+                <div class="adv"><div class="bg-adv3"></div>
                     <div class="adv-title yellow">Возврат денег в течение 14 дней</div>
                 </div>
             </div>
@@ -269,7 +287,7 @@
         </div>
     </footer>
     <script src="lib/plugins.js"></script>
-    <script>
+    <!-- <script>
         // 2. This code loads the IFrame Player API code asynchronously.
         var tag = document.createElement('script');
 
@@ -310,6 +328,21 @@
         function stopVideo() {
             player.stopVideo();
         }
+    </script> -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script>
+$('.slider').slick();
     </script>
+    <script>
+        window.onload = function () {
+          document.body.classList.add('loaded_hiding');
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+          }, 500);
+        }
+      </script>
 </body>
 </html>

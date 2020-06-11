@@ -170,11 +170,65 @@ button {
 .main-screen {
     min-height: 1px;
     height: 700px;
-    background-image: url("../img/main-screen-bg.jpg");
+    background-image: url("../img/main-bg/main-screen-bg_utsijo_c_scale\,w_1920.jpg");
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
+}
+
+@media (max-width: 1363px) {
+    .main-screen {
+        background-image: url("../img/main-bg/main-screen-bg_utsijo_c_scale\,w_1363.jpg");
+}
+}
+
+@media (max-width: 1323px) {
+    .main-screen {
+        background-image: url("../img/main-bg/main-screen-bg_utsijo_c_scale\,w_1323.jpg");
+}
+}
+
+@media (max-width: 1213px) {
+    .main-screen {
+        background-image: url("../img/main-bg/main-screen-bg_utsijo_c_scale\,w_1213.jpg");
+}
+}
+
+@media (max-width: 1097px) {
+    .main-screen {
+        background-image: url("../img/main-bg/main-screen-bg_utsijo_c_scale\,w_1097.jpg");
+}
+}
+
+@media (max-width: 980px) {
+    .main-screen {
+        background-image: url("../img/main-bg/main-screen-bg_utsijo_c_scale\,w_980.jpg");
+}
+}
+
+@media (max-width: 846px) {
+    .main-screen {
+        background-image: url("../img/main-bg/main-screen-bg_utsijo_c_scale\,w_846.jpg");
+}
+}
+
+@media (max-width: 701px) {
+    .main-screen {
+        background-image: url("../img/main-bg/main-screen-bg_utsijo_c_scale\,w_701.jpg");
+}
+}
+
+@media (max-width: 533px) {
+    .main-screen {
+        background-image: url("../img/main-bg/main-screen-bg_utsijo_c_scale\,w_533.jpg");
+}
+}
+
+@media (max-width: 320px) {
+    .main-screen {
+        background-image: url("../img/main-bg/main-screen-bg_utsijo_c_scale\,w_320.jpg");
+}
 }
 
 .main-screen img {
@@ -347,18 +401,16 @@ button {
     justify-content: center;
 }
 
-.reasons .reason .square img {
-    width: 45px;
-    height: auto;
-    display: block;
+.reasons .reason .square div {
+    width: 50px;
     margin: 0 auto;
 }
 
-.reasons .reason .square img.width60 {
+.reasons .reason .square div.width60 {
     width: 60px;
 }
 
-.reasons .reason .square img.width35 {
+.reasons .reason .square div.width35 {
     width: 35px;
 }
 
@@ -538,6 +590,10 @@ button {
     font-size: 18px;
 }
 
+.adv div {
+    margin: 0 auto;
+}
+
 .last-screen {
     clear: both;
     text-align: center;
@@ -592,4 +648,49 @@ footer {
     margin-top: 100px;
     background-color: #333;
     height: 50px;
+}
+
+.bg-reason3 {
+    width: 39px; height: 57px;
+    background: url("../img/css_sprites.png") -96px -10px;
+}
+
+.bg-adv2 {
+    width: 55px; height: 60px;
+    background: url("../img/css_sprites.png") -288px -10px;
+}
+
+.bg-reason1 {
+    width: 55px; height: 34px;
+    background: url("../img/css_sprites.png") -363px -10px;
+}
+
+.bg-adv3 {
+    width: 60px; height: 54px;
+    background: url("../img/css_sprites.png") -513px -10px;
+}
+
+.bg-adv1 {
+    width: 55px; height: 60px;
+    background: url("../img/css_sprites.png") -438px -10px;
+}
+
+.bg-reason2 {
+    width: 45px; height: 45px;
+    background: url("../img/css_sprites.png") -155px -10px;
+}
+
+.bg-reason4 {
+    width: 48px; height: 48px;
+    background: url("../img/css_sprites.png") -220px -10px;
+}
+
+.bg-arrow_left {
+    width: 23px; height: 62px;
+    background: url("../img/css_sprites.png") -10px -10px;
+}
+
+.bg-arrow_right {
+    width: 23px; height: 62px;
+    background: url("../img/css_sprites.png") -53px -10px;
 }
