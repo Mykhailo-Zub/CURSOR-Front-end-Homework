@@ -1,12 +1,12 @@
 @charset 'UTF-8';
 /* Slider */
-.slick-loading .slick-list
+/* .slick-loading .slick-list
 {
     background: #fff url('./ajax-loader.gif') center center no-repeat;
 }
 
 /* Icons */
-@font-face
+/* @font-face
 {
     font-family: 'slick';
     font-weight: normal;
@@ -14,7 +14,7 @@
 
     src: url('./fonts/slick.eot');
     src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
-}
+} */
 /* Arrows */
 .slick-prev,
 .slick-next
@@ -41,7 +41,7 @@
     outline: none;
     background: transparent;
 }
-.slick-prev:hover,
+/* .slick-prev:hover,
 .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus
@@ -111,10 +111,10 @@
 [dir='rtl'] .slick-next:before
 {
     content: '←';
-}
+} */
 
 /* Dots */
-.slick-dotted.slick-slider
+/* .slick-dotted.slick-slider
 {
     margin-bottom: 30px;
 }
@@ -201,4 +201,4 @@
 {
     opacity: .75;
     color: black;
-}
+} */
