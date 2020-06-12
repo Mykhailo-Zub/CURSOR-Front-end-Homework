@@ -51,7 +51,7 @@ h1 {
 }
 
 .progress {
-    width: 79%;
+    width: 100%;
     height: 70%;
     background-color: rgb(118, 4, 153);
     border-radius: 4px;
