@@ -800,16 +800,16 @@ section, footer {
 }
 
 .slider {
-    max-width: 100%;
-    display: flex;
+    width: 100%;
+    /* display: flex;
     flex-wrap: nowrap;
-    overflow-block: hidden;
+    overflow-block: hidden; */
 }
 
 .opinion {
     flex: none;
     width: 309px;
-    height: 161px;
+    height: 161px!important;
     border: 1px solid #828282;
     border-radius: 4px;
     margin-left: 35px;
@@ -822,7 +822,7 @@ section, footer {
     z-index: 1;
 }
 
-.opinion::after {
+/* .opinion::after {
     content: "";
     display: block;
     width: 309px;
@@ -831,11 +831,11 @@ section, footer {
     border-bottom: 15px solid #FFFFFF;
     top: 0;
     left: 0;
-}
+} */
 
-.opinion:first-child {
+/* .opinion:first-child {
     margin-left: -80px;
-}
+} */
 
 .opinion svg {
     width: 15px;
@@ -848,7 +848,7 @@ section, footer {
     margin-right: 11px;
 }
 
-.dots {
+/* .dots {
     display: flex;
     flex-direction: row;
     margin-top: 50px;
@@ -858,7 +858,7 @@ section, footer {
     letter-spacing: 10px;
     position: relative;
     z-index: 1;
-}
+} */
 
 .svg_col_4 {
     fill: #03A9F4;
@@ -889,7 +889,7 @@ section, footer {
     z-index: 2;
 }
 
-.left_arr_button, .right_arr_button {
+.slick-prev, .slick-next {
     width: 47px;
     height: 47px;
     position: absolute;
@@ -898,25 +898,44 @@ section, footer {
     border-radius: 50%;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1), 0px 10px 10px rgba(0, 0, 0, 0.25);
     z-index: 4;
+    font-size: 1px;
+    color: transparent;
+    outline: none;
 }
 
-.left_arr_button {
+.slick-prev {
     left: 7%;
     top: 50%;
+    background-image: url("../img/left_arr.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
-.right_arr_button {
+.slick-next {
     right: 7%;
     top: 50%;
+    background-image: url("../img/left_arr.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
     transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
-.section5 button:hover {
-    width: 50px;
-    height: 50px;
+.slider .slick-prev:hover {
+    transform: scale(1.1);
 } 
 
-.section5 button:active {
+.slider .slick-next:hover {
+    transform: matrix(-1, 0, 0, 1, 0, 0) scale(1.1);
+} 
+
+.slider .slick-prev:active {
+    transform: scale(1);
+    outline: none;
+    border: 2px dotted #00ADEE;
+}
+
+.slider .slick-next:active {
+    transform: matrix(-1, 0, 0, 1, 0, 0) scale(1);
     outline: none;
     border: 2px dotted #00ADEE;
 }
@@ -934,18 +953,24 @@ section, footer {
         display: none;
     }
 
-    .opinion:first-child {
-        margin-left: -350px;
-    }
-
-    .left_arr_button {
-        display: none;
+    .slick-prev {
+        left: 7%;
+        top: -20px;
     }
 
     .right_arr_button {
         right: 7%;
-        top: 80%;
-        transform: matrix(-1, 0, 0, 1, 0, 0);
+        top: -20px;
+    }
+}
+
+@media (max-width:560px) {
+    .slick-prev {
+        top: 240px;
+    }
+
+    .right_arr_button {
+        top: 240px;
     }
 }
 
@@ -1101,3 +1126,13 @@ nav a {
     
 }
 
+@media (max-width:425px) {
+    .section6 h2 {
+        text-align: center;
+    }
+
+    .section6 a {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
